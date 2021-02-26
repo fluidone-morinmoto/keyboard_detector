@@ -1,0 +1,10 @@
+{
+    "device": "/path/of/your/device_or_id",
+    "mapped_sounds": {
+        "29": "abs/path/of/your/sound",
+        "42": "abs/path/of/another/sound"
+    },
+    "other_command": {
+
+    }
+}

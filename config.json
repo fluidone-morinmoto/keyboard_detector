@@ -1,7 +1,8 @@
 {
     "device": "/dev/input/event13",
     "mapped_sounds": {
-        "29": "/home/fluidone/Development/KeyboardDetector_Workspace/keyboard_venv/keyboard_detector/sounds/snare.mp3"
+        "29": "/home/fluidone/Development/KeyboardDetector_Workspace/keyboard_venv/keyboard_detector/sounds/snare.mp3",
+        "42": "/home/fluidone/Development/KeyboardDetector_Workspace/keyboard_venv/keyboard_detector/sounds/clap.wav"
     },
     "other_command": {
 

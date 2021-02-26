@@ -1,3 +1,4 @@
 setuptools
 wheel
 keyboard==0.13.5
+pydub==0.24.1

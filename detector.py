@@ -1,5 +1,8 @@
 import keyboard
 import json
+from pydub import AudioSegment
+from pydub.playback import play
+
 
 codes = [
     29,  #left control
@@ -31,6 +34,18 @@ with open('./config.json') as file:
 def _play_sound(sound):
     msg = "Ready to play {}"
     print(msg.format(sound))
+
+    ## This plays audio via ffmpeg
+    song = None
+    if sound.lower().endswith('.mp3'):
+        song = AudioSegment.from_mp3(sound)
+    if sound.lower().endswith(('.wav', 'wave')):
+        song = AudioSegment.from_wav(sound)
+    if song is not None:
+        play(song)
+    else:
+        msg = "{} is not in a valid format. Only mp3 and wave are permitted"
+        print(msg.format(sound))
 
 ## Detects if the pressed key come from the right device and is related to a
 ## command
