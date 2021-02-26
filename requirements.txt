@@ -1,0 +1,3 @@
+setuptools
+wheel
+keyboard==0.13.5
